@@ -137,7 +137,7 @@
             <h2>Academic Background</h2>
             <p>Degree: Your Degree</p>
             <p>University: Your University</p>
-            <p>Year of Graduation: 2015</p>
+            <p>Year of Graduation: 2020</p>
         </div>
     </div>
 </body>
