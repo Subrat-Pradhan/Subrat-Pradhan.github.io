@@ -111,16 +111,53 @@
             
         </div>
         <div class="section">
-            <h2>Work Experience</h2>
-            <h3>Company 1</h3>
-            <p>Role: Software Tester</p>
-            <p>Duration: January 2020 - Present</p>
-            <p>Responsibilities: Describe your responsibilities here</p>
+            <h2> Professional Experience</h2>
+            <h3>DashClicks India (Remote)</h3>
+            <p>Role:  Quality Analyst Specialist</p>
+            <p>Duration: Feb 2022 - Present</p>
+            <p>Responsibilities:
+<li> Engagedin the development and execution of test plans, identifying defects, and
+ tracking them through to resolution</li>
+<li> Automated manual test cases, reducing testing time and improving product quality and
+ consistency across multiple platforms</li>
+ <li> Developed strong relationships with developers and product managers to ensure a clear
+ understanding of product goals and requirements</li>
+ <li> Conducted regression, integration, and system testing to ensure software products meet
+ rigorous quality standards</li>
+ <li> Writing and executing test cases</li>
+ <li> Backend and Frontend Testing</li>
+ <li> Basic Automation testing with selenium (Java)</li>
+ <li> Frontend UI automation using Katalon Studio</li>
+<li> Gotexposure to cypress studio, Cypress and playwright (javascript)</li>
+</p>
             
-            <h3>Company 2</h3>
-            <p>Role: Software Tester</p>
-            <p>Duration: January 2018 - December 2019</p>
-            <p>Responsibilities: Describe your responsibilities here</p>
+            <h3>Bajaj Finserv Health (Viman Nagar,Pune)</h3>
+            <p>Role:  Manual QE</p>
+            <p>Duration:  Jan 2021 - Feb 2022 </p>
+            <p>Responsibilities: 
+ <li> Collaborate closely with developers, QA leads, and product managers to shape new
+ projects and successfully deliver product releases.</li>
+ <li> Provide feedback on product quality, identify potential risks, and offer solutions to
+ mitigate issues while balancing time constraints.</li>
+ <li> Drive continuous improvement by applying feedback and lessons learned to optimize
+ future testing cycles.</li>
+ <li> Collaborate with cross-functional teams to ensure alignment on objectives and seamless
+ product releases.</li>
+ <li> I’mresponsible for PROD deployments & Release management for web.</li>
+ <li> Contributed to Test Plan Documentation.</li>
+ <li> Got1st prize in Bugathon.</li>
+ <li> Ihavedone API testing, Performance testing, Web testing and App testing.</li>
+ <li> Familiar with CI/CD pipelines.</li>
+<li> Understanding Test requirements for Test planning and Effort’s estimation.</li>
+<li> Goodknowledge in Team management, Testing Life cycle, Testing Techniques, Test
+ preparation, Test Suites creation, Executing Test Cases, Reporting Defects and Defect
+ management.</li>
+<li> IdoTest case creation, Build Sanity & Regression testing for app web both.</li>
+ <li> Familiar with SCRUM and AGILE testing methodology</li>
+ <li> Goodknowledge in many tools like DevOps Azure, Postman, CleverTap, Google
+ Analytics, CMS and developed good bug finding & bug writing skills</li>
+
+Describe your responsibilities here</p>
             
             <h3>Company 3</h3>
             <p>Role: Software Tester</p>
