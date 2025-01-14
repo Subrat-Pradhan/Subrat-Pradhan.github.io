@@ -55,7 +55,7 @@
     .section {
       background-color: var(--section-bg);
       transition: all 0.3s ease;
-      margin-bottom: 30px;
+      /* margin-bottom: 30px; */
       padding: 20px;
       border-radius: 8px;
     }
@@ -151,7 +151,11 @@
       -webkit-transition: var(--transition);
       -o-transition: var(--transition);
       transition: var(--transition);
-      position: relative;
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      width: 150px;
+      height: 70px;
     }
 
     .theme-switch__container::before {
