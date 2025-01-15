@@ -313,12 +313,30 @@
       -ms-transform: translateY(-50%);
       transform: translateY(-50%);
     }
+    .profile-image-container {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      margin: 20px 0;
+    }
+    
+    .profile-image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 4px solid var(--text-color);
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
   </style>
 </head>
 
 <body>
   <div class="container">
     <center>
+      <div class="profile-image-container">
+        <img src="https://avatars.githubusercontent.com/u/182939336?v=4" alt="Subrat Kumar Pradhan" class="profile-image">
+      </div>
       <h1>SUBRAT KUMAR PRADHAN</h1>
       
       <label class="theme-switch">
@@ -344,104 +362,102 @@
         </div>
       </label>
       <br>
-
-      </br>
     </center>
     <div class="section">
       <h2>Professional Summary</h2>
-      <p>Highly motivated and results-oriented software quality assurance engineer with extensive experience in Manual
-        Testing, and cross-functional team collaboration. Adept at working in fast-paced environments and skilled in
-        leveraging tools like Selenium, cypress studio, and Katalon to ensure top-tier product quality. Proven track
-        record of successfully product releases, identifying risks, and balancing quality with time-bound delivery.
-        Passionate about transforming the physical and digital worlds through cutting-edge technology and innovation.
+      <p> Dedicated and results-oriented software quality assurance engineer with over 5 years of experience in both 
+        manual and automated testing. Demonstrated success in lowering defect rates, optimizing testing workflows, and 
+        improving product quality through strategic testing and teamwork. Skilled in utilizing tools such as Selenium, 
+        Cypress, and Katalon to provide timely, high-quality solutions. Committed to fostering innovation and turning 
+        technology into meaningful outcomes.
       </p>
       <h2>Core Competencies</h2>
       <ul>
-        <li>Cross-functional Collaboration (Developers, QA Leads, Product Managers)</li>
-        <li>Test Automation Frameworks (Selenium, Katalon, Cypress Studio)</li>
-        <li>Software Quality Assurance (QA)</li>
-        <li>Agile Methodologies (Scrum, Kanban)</li>
-        <li>Risk Management & Issue Resolution</li>
-        <li>Problem Solving & Decision Making</li>
-        <li>Test Case Design & Execution</li>
-        <li>Continuous Improvement</li>
-        <li>Database Testing</li>
-        <li>API Testing</li>
+        <li>Test Automation Tools: Selenium, Katalon Studio, Cypress Studio</li>
+        <li>Testing Expertise: Functional, Regression, Integration, System Testing</li>
+        <li>Methodologies: Agile, Scrum, Waterfall</li>
+        <li>Soft Skills: Cross-functional Collaboration, Team Leadership, Problem-Solving, Adaptability</li>
+        <li>Tools: Jira, TestRail, Azure DevOps, Postman</li>
+        <li>Languages: Java, JavaScript</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Professional Experience</h2>
+      
+      <h3>Quality Analyst Specialist</h3>
+      <p>DashClicks India (Remote)</p>
+      <p>Feb 2022 – Present</p>
+      <ul>
+        <li>Automated manual test cases, reducing testing time by 30% and improving product quality across platforms.</li>
+        <li>Identified and resolved critical defects, reducing post-release defect rates by 20%.</li>
+        <li>Collaborated with developers and product managers to ensure clear alignment on product requirements and goals.</li>
+        <li>Executed comprehensive regression, integration, and system testing for multiple software releases.</li>
+        <li>Gained hands-on experience with advanced tools, including Cypress Studio and Playwright.</li>
       </ul>
 
+      <h3>Manual QE</h3>
+      <p>Bajaj Finserv Health (Viman Nagar, Pune)</p>
+      <p>Jan 2021 – Feb 2022</p>
+      <ul>
+        <li>Achieved a 25% reduction in testing cycle time by optimizing regression testing processes.</li>
+        <li>Conducted API, performance, web, and mobile app testing, contributing to seamless product launches.</li>
+        <li>Led PROD deployments and release management for web applications, ensuring zero downtime.</li>
+        <li>Enhanced team productivity by introducing a streamlined defect management process.</li>
+        <li>Recognized with 1st prize in the "Bugathon" competition for exemplary bug detection.</li>
+      </ul>
+
+      <h3>Test Engineer</h3>
+      <p>Global Step (Viman Nagar, Pune)</p>
+      <p>May 2019 – Jan 2021</p>
+      <ul>
+        <li>Conducted manual, performance, and regression testing, ensuring adherence to rigorous quality standards.</li>
+        <li>Designed and executed over 500 test cases, achieving 95% test coverage for various projects.</li>
+        <li>Actively contributed to compliance testing and performance optimization for production builds.</li>
+        <li>Utilized tools like TestRail and Jira to track defects and document test results, improving reporting efficiency by 15%.</li>
+      </ul>
     </div>
+
     <div class="section">
-      <h2> Professional Experience</h2>
-      <h3>DashClicks India (Remote)</h3>
-      <p>Role: Quality Analyst Specialist</p>
-      <p>Duration: Feb 2022 - Present</p>
-      <p>Responsibilities:
-        <ul>
-        <li> Engagedin the development and execution of test plans,
-          identifying defects, and tracking them through to resolution</li>
-        <li> Automated manual test cases, reducing testing time and improving product quality and
-          consistency across multiple platforms</li>
-        <li> Developed strong relationships with developers and 
-          product managers to ensure a clear understanding of product goals and requirements</li>
-        <li> Conducted regression, integration, and system testing to ensure software products meet
-          rigorous quality standards</li>
-        <li> Writing and executing test cases</li>
-        <li> Backend and Frontend Testing</li>
-        <li> Basic Automation testing with selenium (Java)</li>
-        <li> Frontend UI automation using Katalon Studio</li>
-        <li> Gotexposure to cypress studio, Cypress and playwright (javascript)</li>
-        </ul>
-      </p>
+      <h2>Education</h2>
+      <h3>Master of Computer Applications (MCA)</h3>
+      <p>Sinhgad Institute Of Management, Pune</p>
+      <p>2017 – 2020</p>
 
-      <h3>Bajaj Finserv Health (Viman Nagar,Pune)</h3>
-      <p>Role: Manual QE</p>
-      <p>Duration: Jan 2021 - Feb 2022 </p>
-      <p>Responsibilities:
-        <ul>
-        <li> Collaborate closely with developers, QA leads, and product managers to shape new
-          projects and successfully deliver product releases.</li>
-        <li> Provide feedback on product quality, identify potential risks, and offer solutions to
-          mitigate issues while balancing time constraints.</li>
-        <li> Drive continuous improvement by applying feedback and lessons learned to optimize
-          future testing cycles.</li>
-        <li> Collaborate with cross-functional teams to ensure alignment on objectives and seamless
-          product releases.</li>
-        <li> I’mresponsible for PROD deployments & Release management for web.</li>
-        <li> Contributed to Test Plan Documentation.</li>
-        <li> Got1st prize in Bugathon.</li>
-        <li> Ihavedone API testing, Performance testing, Web testing and App testing.</li>
-        <li> Familiar with CI/CD pipelines.</li>
-        <li> Understanding Test requirements for Test planning and Effort’s estimation.</li>
-        <li> Goodknowledge in Team management, Testing Life cycle, Testing Techniques, Test
-          preparation, Test Suites creation, Executing Test Cases, Reporting Defects and Defect
-          management.</li>
-        <li> IdoTest case creation, Build Sanity & Regression testing for app web both.</li>
-        <li> Familiar with SCRUM and AGILE testing methodology</li>
-        <li> Goodknowledge in many tools like DevOps Azure, Postman, CleverTap, Google
-          Analytics, CMS and developed good bug finding & bug writing skills</li>
-        </ul>
-      </p>
+      <h3>Bachelor of Computer Applications (BCA)</h3>
+      <p>Vikash School Of Business Management, Bargarh</p>
+      <p>2014 – 2017</p>
+    </div>
 
-      <h3>Global Step (Viman Nagar,Pune)</h3>
-      <p>Role: Test Engineer</p>
-      <p>Duration: May 2019- Jan 2021</p>
-      <p>Responsibilities:
-        <ul>
-        <li>I haveworked as a Manual Test Engineer in Global Step for 1.7 years.
-        <li> HereIhave done manual testing, performance testing, regression testing and may more
-          types of testing.</li>
-        <li> Build Control (BVT testing).</li>
-        <li> Sanity Testing, Regression Testing on modified Software Builds.</li>
-        <li> Documenting Test Cases and Collecting Test Data for Functional Testing.</li>
-        <li> Executing Test Cases and Reporting Defects.</li>
-        <li> Tracking Defects, Selecting Test Cases for Regression Testing.</li>
-        <li> Tracking Changes, Preparing Reports and Updating Documents.</li>
-        <li> TeamCommunication and Customer Communication.</li>
-        <li> Compliance Testing & performance testing on release and production builds</li>
-        <li> Familiar with many testing tools like Testrail, Jira and develop good bug finding & bug
-          writing skills</li>
-        </ul>
-      </p>
+    <div class="section">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li>Automation Tools: Selenium, Katalon Studio, Cypress Studio</li>
+        <li>Defect Tracking Tools: Jira, Azure DevOps</li>
+        <li>API Testing Tools: Postman</li>
+        <li>Programming Languages: Java, JavaScript</li>
+        <li>Testing Expertise: Functional, Regression, System, Integration Testing</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Achievements & Professional Development</h2>
+      <ul>
+        <li>Reduced testing cycle time by 30% through automation initiatives.</li>
+        <li>Achieved 20% reduction in post-release defect rates via enhanced testing strategies.</li>
+        <li>Recognized with 1st prize in "Bugathon" for outstanding bug detection capabilities.</li>
+        <li>Actively participated in webinars and workshops on Agile methodologies and test automation tools.</li>
+        <li>Member of professional testing forums and communities, contributing to industry discussions.</li>
+      </ul>
+    </div>
+
+    <div class="section">
+      <h2>Personal Attributes</h2>
+      <ul>
+        <li>Strong communicator, capable of simplifying complex technical concepts for diverse audiences.</li>
+        <li>Quick learner, adaptable to new tools and methodologies.</li>
+        <li>Passionate about continuous professional growth and staying updated with the latest industry trends</li>
+      </ul>
     </div>
     <div class="section">
       <h2>Projects</h2>
@@ -473,7 +489,7 @@
       </h5>
     </p>
   </div>
-  
+    
   <script>
     (function() {
       // Cache DOM elements
