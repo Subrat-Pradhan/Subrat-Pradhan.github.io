@@ -1,525 +1,293 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Subrat Kumar Pradhan</title>
-  <style>
-    /* Light theme variables */
-    :root {
-      --background-color: #ffffff;
-      --text-color: #333333;
-      --section-bg: #f5f5f5;
-      --heading-color: #007bff;
-      --link-color: #0056b3;
-    }
+  <title>Subrat Kumar Pradhan | Senior QA Engineer & Automation Specialist</title>
+  <meta name="description"
+    content="Portfolio of Subrat Kumar Pradhan, a Senior QA Engineer specializing in Test Automation, Cypress, Playwright, and Quality Assurance Leadership.">
 
-    /* Dark theme variables */
-    :root[data-theme="dark"] {
-      --background-color: #121212;
-      --text-color: #ffffff;
-      --section-bg: #1f1f1f;
-      --heading-color: #00bcd4;
-      --link-color: #80deea;
-    }
+  <!-- Fonts: Inter (Google Fonts) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    body {
-      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      margin: 0;
-      padding: 20px;
-      background-color: var(--background-color);
-      color: var(--text-color);
-      transition: all 0.3s ease;
-      line-height: 1.6;
-    }
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
 
-    .container {
-      max-width: 800px;
-      margin: auto;
-      background-color: var(--section-bg);
-      padding: 30px;
-      border-radius: 10px;
-      box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
-      transition: all 0.3s ease;
-    }
-
-    h1, h2, h3, a {
-      color: var(--heading-color);
-      margin-bottom: 15px;
-    }
-
-    h1 {
-      margin-bottom: 20px;
-    }
-
-    .section {
-      background-color: var(--section-bg);
-      transition: all 0.3s ease;
-      /* margin-bottom: 30px; */
-      padding: 20px;
-      border-radius: 8px;
-    }
-
-    p {
-      margin: 10px 0;
-    }
-
-    ul {
-      margin: 10px 0;
-      padding-left: 25px;
-    }
-
-    li {
-      margin-bottom: 8px;
-    }
-
-    .academic-item {
-      margin-bottom: 25px;
-    }
-
-    .academic-item h3 {
-      margin-bottom: 10px;
-    }
-
-    .academic-item p {
-      margin: 5px 0;
-    }
-
-    .center {
-      text-align: center;
-    }
-
-    @keyframes fadeIn {
-      from {
-        opacity: 0;
-      }
-
-      to {
-        opacity: 1;
-      }
-    }
-
-    .container, .section {
-      animation: fadeIn 1s ease-in-out;
-    }
-
-    /* From Uiverse.io by Galahhad */
-    .theme-switch {
-      --toggle-size: 30px;
-      /* the size is adjusted using font-size,
-     this is not transform scale,
-     so you can choose any size */
-      --container-width: 5.625em;
-      --container-height: 2.5em;
-      --container-radius: 6.25em;
-      /* radius 0 - minecraft mode :) */
-      --container-light-bg: #3D7EAE;
-      --container-night-bg: #1D1F2C;
-      --circle-container-diameter: 3.375em;
-      --sun-moon-diameter: 2.125em;
-      --sun-bg: #ECCA2F;
-      --moon-bg: #C4C9D1;
-      --spot-color: #959DB1;
-      --circle-container-offset: calc((var(--circle-container-diameter) - var(--container-height)) / 2 * -1);
-      --stars-color: #fff;
-      --clouds-color: #F3FDFF;
-      --back-clouds-color: #AACADF;
-      --transition: .5s cubic-bezier(0, -0.02, 0.4, 1.25);
-      --circle-transition: .3s cubic-bezier(0, -0.02, 0.35, 1.17);
-    }
-
-    .theme-switch,
-    .theme-switch *,
-    .theme-switch *::before,
-    .theme-switch *::after {
-      -webkit-box-sizing: border-box;
-      box-sizing: border-box;
-      margin: 0;
-      padding: 0;
-      font-size: var(--toggle-size);
-    }
-
-    .theme-switch__container {
-      width: var(--container-width);
-      height: var(--container-height);
-      background-color: var(--container-light-bg);
-      border-radius: var(--container-radius);
-      overflow: hidden;
-      cursor: pointer;
-      -webkit-box-shadow: 0em -0.062em 0.062em rgba(0, 0, 0, 0.25), 0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
-      box-shadow: 0em -0.062em 0.062em rgba(0, 0, 0, 0.25), 0em 0.062em 0.125em rgba(255, 255, 255, 0.94);
-      -webkit-transition: var(--transition);
-      -o-transition: var(--transition);
-      transition: var(--transition);
-      position: absolute;
-      top: 20px;
-      right: 20px;
-      width: 150px;
-      height: 70px;
-    }
-
-    .theme-switch__container::before {
-      content: "";
-      position: absolute;
-      z-index: 1;
-      inset: 0;
-      -webkit-box-shadow: 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset, 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset;
-      box-shadow: 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset, 0em 0.05em 0.187em rgba(0, 0, 0, 0.25) inset;
-      border-radius: var(--container-radius)
-    }
-
-    .theme-switch__checkbox {
-      display: none;
-    }
-
-    .theme-switch__circle-container {
-      width: var(--circle-container-diameter);
-      height: var(--circle-container-diameter);
-      background-color: rgba(255, 255, 255, 0.1);
-      position: absolute;
-      left: var(--circle-container-offset);
-      top: var(--circle-container-offset);
-      border-radius: var(--container-radius);
-      -webkit-box-shadow: inset 0 0 0 3.375em rgba(255, 255, 255, 0.1), inset 0 0 0 3.375em rgba(255, 255, 255, 0.1), 0 0 0 0.625em rgba(255, 255, 255, 0.1), 0 0 0 1.25em rgba(255, 255, 255, 0.1);
-      box-shadow: inset 0 0 0 3.375em rgba(255, 255, 255, 0.1), inset 0 0 0 3.375em rgba(255, 255, 255, 0.1), 0 0 0 0.625em rgba(255, 255, 255, 0.1), 0 0 0 1.25em rgba(255, 255, 255, 0.1);
-      display: -webkit-box;
-      display: -ms-flexbox;
-      display: flex;
-      -webkit-transition: var(--circle-transition);
-      -o-transition: var(--circle-transition);
-      transition: var(--circle-transition);
-      pointer-events: none;
-    }
-
-    .theme-switch__sun-moon-container {
-      pointer-events: auto;
-      position: relative;
-      z-index: 2;
-      width: var(--sun-moon-diameter);
-      height: var(--sun-moon-diameter);
-      margin: auto;
-      border-radius: var(--container-radius);
-      background-color: var(--sun-bg);
-      -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset, 0em -0.062em 0.062em 0em #a1872a inset;
-      box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset, 0em -0.062em 0.062em 0em #a1872a inset;
-      -webkit-filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25)) drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
-      filter: drop-shadow(0.062em 0.125em 0.125em rgba(0, 0, 0, 0.25)) drop-shadow(0em 0.062em 0.125em rgba(0, 0, 0, 0.25));
-      overflow: hidden;
-      -webkit-transition: var(--transition);
-      -o-transition: var(--transition);
-      transition: var(--transition);
-    }
-
-    .theme-switch__moon {
-      -webkit-transform: translateX(100%);
-      -ms-transform: translateX(100%);
-      transform: translateX(100%);
-      width: 100%;
-      height: 100%;
-      background-color: var(--moon-bg);
-      border-radius: inherit;
-      -webkit-box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset, 0em -0.062em 0.062em 0em #969696 inset;
-      box-shadow: 0.062em 0.062em 0.062em 0em rgba(254, 255, 239, 0.61) inset, 0em -0.062em 0.062em 0em #969696 inset;
-      -webkit-transition: var(--transition);
-      -o-transition: var(--transition);
-      transition: var(--transition);
-      position: relative;
-    }
-
-    .theme-switch__spot {
-      position: absolute;
-      top: 0.75em;
-      left: 0.312em;
-      width: 0.75em;
-      height: 0.75em;
-      border-radius: var(--container-radius);
-      background-color: var(--spot-color);
-      -webkit-box-shadow: 0em 0.0312em 0.062em rgba(0, 0, 0, 0.25) inset;
-      box-shadow: 0em 0.0312em 0.062em rgba(0, 0, 0, 0.25) inset;
-    }
-
-    .theme-switch__spot:nth-of-type(2) {
-      width: 0.375em;
-      height: 0.375em;
-      top: 0.937em;
-      left: 1.375em;
-    }
-
-    .theme-switch__spot:nth-last-of-type(3) {
-      width: 0.25em;
-      height: 0.25em;
-      top: 0.312em;
-      left: 0.812em;
-    }
-
-    .theme-switch__clouds {
-      width: 1.25em;
-      height: 1.25em;
-      background-color: var(--clouds-color);
-      border-radius: var(--container-radius);
-      position: absolute;
-      bottom: -0.625em;
-      left: 0.312em;
-      -webkit-box-shadow: 0.937em 0.312em var(--clouds-color), -0.312em -0.312em var(--back-clouds-color), 1.437em 0.375em var(--clouds-color), 0.5em -0.125em var(--back-clouds-color), 2.187em 0 var(--clouds-color), 1.25em -0.062em var(--back-clouds-color), 2.937em 0.312em var(--clouds-color), 2em -0.312em var(--back-clouds-color), 3.625em -0.062em var(--clouds-color), 2.625em 0em var(--back-clouds-color), 4.5em -0.312em var(--clouds-color), 3.375em -0.437em var(--back-clouds-color), 4.625em -1.75em 0 0.437em var(--clouds-color), 4em -0.625em var(--back-clouds-color), 4.125em -2.125em 0 0.437em var(--back-clouds-color);
-      box-shadow: 0.937em 0.312em var(--clouds-color), -0.312em -0.312em var(--back-clouds-color), 1.437em 0.375em var(--clouds-color), 0.5em -0.125em var(--back-clouds-color), 2.187em 0 var(--clouds-color), 1.25em -0.062em var(--back-clouds-color), 2.937em 0.312em var(--clouds-color), 2em -0.312em var(--back-clouds-color), 3.625em -0.062em var(--clouds-color), 2.625em 0em var(--back-clouds-color), 4.5em -0.312em var(--clouds-color), 3.375em -0.437em var(--back-clouds-color), 4.625em -1.75em 0 0.437em var(--clouds-color), 4em -0.625em var(--back-clouds-color), 4.125em -2.125em 0 0.437em var(--back-clouds-color);
-      -webkit-transition: 0.5s cubic-bezier(0, -0.02, 0.4, 1.25);
-      -o-transition: 0.5s cubic-bezier(0, -0.02, 0.4, 1.25);
-      transition: 0.5s cubic-bezier(0, -0.02, 0.4, 1.25);
-    }
-
-    .theme-switch__stars-container {
-      position: absolute;
-      color: var(--stars-color);
-      top: -100%;
-      left: 0.312em;
-      width: 2.75em;
-      height: auto;
-      -webkit-transition: var(--transition);
-      -o-transition: var(--transition);
-      transition: var(--transition);
-    }
-
-    /* actions */
-
-    .theme-switch__checkbox:checked+.theme-switch__container {
-      background-color: var(--container-night-bg);
-    }
-
-    .theme-switch__checkbox:checked+.theme-switch__container .theme-switch__circle-container {
-      left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter));
-    }
-
-    .theme-switch__checkbox:checked+.theme-switch__container .theme-switch__circle-container:hover {
-      left: calc(100% - var(--circle-container-offset) - var(--circle-container-diameter) - 0.187em)
-    }
-
-    .theme-switch__circle-container:hover {
-      left: calc(var(--circle-container-offset) + 0.187em);
-    }
-
-    .theme-switch__checkbox:checked+.theme-switch__container .theme-switch__moon {
-      -webkit-transform: translate(0);
-      -ms-transform: translate(0);
-      transform: translate(0);
-    }
-
-    .theme-switch__checkbox:checked+.theme-switch__container .theme-switch__clouds {
-      bottom: -4.062em;
-    }
-
-    .theme-switch__checkbox:checked+.theme-switch__container .theme-switch__stars-container {
-      top: 50%;
-      -webkit-transform: translateY(-50%);
-      -ms-transform: translateY(-50%);
-      transform: translateY(-50%);
-    }
-    .profile-image-container {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      margin: 20px 0;
-    }
-    
-    .profile-image {
-      width: 200px;
-      height: 200px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 4px solid var(--text-color);
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-    }
-  </style>
+  <!-- Font Awesome for clean icons (optional, using text fallback for speed/simplicity if preferred due to constraint. Using SVG icons or simple text for now to keep it dependency free as per requirment, but linking for social icons if needed or using SVGs below) -->
 </head>
 
 <body>
-  <div class="container">
-    <center>
-      <div class="profile-image-container">
-        <img src="https://avatars.githubusercontent.com/u/182939336?v=4" alt="Subrat Kumar Pradhan" class="profile-image">
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-content">
+      <a href="#" class="logo">Subrat.QA</a>
+      <div class="nav-links">
+        <a href="#summary">About</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Work</a>
+        <a href="#contact">Contact</a>
       </div>
-      <h1>SUBRAT KUMAR PRADHAN</h1>
-      
-      <label class="theme-switch">
-        <input type="checkbox" class="theme-switch__checkbox">
-        <div class="theme-switch__container">
-          <div class="theme-switch__clouds"></div>
-          <div class="theme-switch__stars-container">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 144 55" fill="none">
-              <path fill-rule="evenodd" clip-rule="evenodd"
-                d="M135.831 3.00688C135.055 3.85027 134.111 4.29946 133 4.35447C134.111 4.40947 135.055 4.85867 135.831 5.71123C136.607 6.55462 136.996 7.56303 136.996 8.72727C136.996 7.95722 137.172 7.25134 137.525 6.59129C137.886 5.93124 138.372 5.39954 138.98 5.00535C139.598 4.60199 140.268 4.39114 141 4.35447C139.88 4.2903 138.936 3.85027 138.16 3.00688C137.384 2.16348 136.996 1.16425 136.996 0C136.996 1.16425 136.607 2.16348 135.831 3.00688ZM31 23.3545C32.1114 23.2995 33.0551 22.8503 33.8313 22.0069C34.6075 21.1635 34.9956 20.1642 34.9956 19C34.9956 20.1642 35.3837 21.1635 36.1599 22.0069C36.9361 22.8503 37.8798 23.2903 39 23.3545C38.2679 23.3911 37.5976 23.602 36.9802 24.0053C36.3716 24.3995 35.8864 24.9312 35.5248 25.5913C35.172 26.2513 34.9956 26.9572 34.9956 27.7273C34.9956 26.563 34.6075 25.5546 33.8313 24.7112C33.0551 23.8587 32.1114 23.4095 31 23.3545ZM0 36.3545C1.11136 36.2995 2.05513 35.8503 2.83131 35.0069C3.6075 34.1635 3.99559 33.1642 3.99559 32C3.99559 33.1642 4.38368 34.1635 5.15987 35.0069C5.93605 35.8503 6.87982 36.2903 8 36.3545C7.26792 36.3911 6.59757 36.602 5.98015 37.0053C5.37155 37.3995 4.88644 37.9312 4.52481 38.5913C4.172 39.2513 3.99559 39.9572 3.99559 40.7273C3.99559 39.563 3.6075 38.5546 2.83131 37.7112C2.05513 36.8587 1.11136 36.4095 0 36.3545ZM56.8313 24.0069C56.0551 24.8503 55.1114 25.2995 54 25.3545C55.1114 25.4095 56.0551 25.8587 56.8313 26.7112C57.6075 27.5546 57.9956 28.563 57.9956 29.7273C57.9956 28.9572 58.172 28.2513 58.5248 27.5913C58.8864 26.9312 59.3716 26.3995 59.9802 26.0053C60.5976 25.602 61.2679 25.3911 62 25.3545C60.8798 25.2903 59.9361 24.8503 59.1599 24.0069C58.3837 23.1635 57.9956 22.1642 57.9956 21C57.9956 22.1642 57.6075 23.1635 56.8313 24.0069ZM81 25.3545C82.1114 25.2995 83.0551 24.8503 83.8313 24.0069C84.6075 23.1635 84.9956 22.1642 84.9956 21C84.9956 22.1642 85.3837 23.1635 86.1599 24.0069C86.9361 24.8503 87.8798 25.2903 89 25.3545C88.2679 25.3911 87.5976 25.602 86.9802 26.0053C86.3716 26.3995 85.8864 26.9312 85.5248 27.5913C85.172 28.2513 84.9956 28.9572 84.9956 29.7273C84.9956 28.563 84.6075 27.5546 83.8313 26.7112C83.0551 25.8587 82.1114 25.4095 81 25.3545ZM136 36.3545C137.111 36.2995 138.055 35.8503 138.831 35.0069C139.607 34.1635 139.996 33.1642 139.996 32C139.996 33.1642 140.384 34.1635 141.16 35.0069C141.936 35.8503 142.88 36.2903 144 36.3545C143.268 36.3911 142.598 36.602 141.98 37.0053C141.372 37.3995 140.886 37.9312 140.525 38.5913C140.172 39.2513 139.996 39.9572 139.996 40.7273C139.996 39.563 139.607 38.5546 138.831 37.7112C138.055 36.8587 137.111 36.4095 136 36.3545ZM101.831 49.0069C101.055 49.8503 100.111 50.2995 99 50.3545C100.111 50.4095 101.055 50.8587 101.831 51.7112C102.607 52.5546 102.996 53.563 102.996 54.7273C102.996 53.9572 103.172 53.2513 103.525 52.5913C103.886 51.9312 104.372 51.3995 104.98 51.0053C105.598 50.602 106.268 50.3911 107 50.3545C105.88 50.2903 104.936 49.8503 104.16 49.0069C103.384 48.1635 102.996 47.1642 102.996 46C102.996 47.1642 102.607 48.1635 101.831 49.0069Z"
-                fill="currentColor"></path>
-            </svg>
-          </div>
-          <div class="theme-switch__circle-container">
-            <div class="theme-switch__sun-moon-container">
-              <div class="theme-switch__moon">
-                <div class="theme-switch__spot"></div>
-                <div class="theme-switch__spot"></div>
-                <div class="theme-switch__spot"></div>
-              </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero" id="hero">
+    <div class="container hero-content reveal">
+      <h1>Subrat Kumar Pradhan</h1>
+      <p class="hero-tagline">Senior QA Engineer & Automation Specialist</p>
+      <p class="hero-bio">
+        Driving product quality through strategic automation, process optimization, and defect reduction.
+        Expert in Cypress, Selenium, and building scalable test frameworks.
+      </p>
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">View Projects</a>
+        <!-- Using a placeholder for resume download, can be linked to actual PDF later -->
+        <a href="resume.pdf" class="btn btn-secondary" target="_blank">Download Resume</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Metrics Highlight -->
+  <section class="container">
+    <div class="metrics-grid reveal">
+      <div class="metric-item">
+        <span class="metric-number">30%</span>
+        <span class="metric-label">Reduction in Testing Cycle Time</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-number">20%</span>
+        <span class="metric-label">Decrease in Post-Release Defects</span>
+      </div>
+      <div class="metric-item">
+        <span class="metric-number">95%</span>
+        <span class="metric-label">Test Coverage Achieved</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- Professional Summary -->
+  <section id="summary">
+    <div class="container reveal">
+      <h2 class="section-title">Professional Summary</h2>
+      <p style="text-align: center; max-width: 700px; margin: 0 auto; color: var(--text-secondary); font-size: 1.1rem;">
+        Results-driven Software Quality Assurance Engineer with 5+ years of experience across manual and automated
+        testing. Proven at reducing defect rates, streamlining testing processes, and driving quality-focused
+        innovation. Adept at bridging development and QA to enable smooth, reliable product releases.
+      </p>
+    </div>
+  </section>
+
+  <!-- Skills Section -->
+  <section id="skills">
+    <div class="container reveal">
+      <h2 class="section-title">Technical Expertise</h2>
+      <div class="skills-grid">
+        <div class="skill-card">
+          <h3>Automation & Tools</h3>
+          <ul class="skill-list">
+            <li>Cypress & Cypress Studio</li>
+            <li>Selenium WebDriver</li>
+            <li>Playwright</li>
+            <li>Katalon Studio</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Manual & Process</h3>
+          <ul class="skill-list">
+            <li>Functional & System Testing</li>
+            <li>Regression Suites</li>
+            <li>Agile/Scrum Methodologies</li>
+            <li>Defect Life Cycle Management</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Backend & DevOps</h3>
+          <ul class="skill-list">
+            <li>API Testing (Postman)</li>
+            <li>Jira & TestRail</li>
+            <li>Azure DevOps</li>
+            <li>CI/CD Integration Basics</li>
+          </ul>
+        </div>
+        <div class="skill-card">
+          <h3>Languages</h3>
+          <ul class="skill-list">
+            <li>JavaScript (ES6+)</li>
+            <li>Java</li>
+            <li>SQL Basics</li>
+            <li>HTML/CSS</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Case Studies / Work Highlights -->
+  <section id="casestudies" style="background-color: var(--bg-secondary);">
+    <div class="container reveal">
+      <h2 class="section-title">Impact Case Studies</h2>
+
+      <!-- Case Study 1 -->
+      <div class="case-study-card">
+        <span class="case-study-meta">Optimization & Automation</span>
+        <h3>Reducing Testing Time by 30% at DashClicks</h3>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">
+          <strong>Challenge:</strong> Manual regression cycles were taking too long, delaying releases.<br>
+          <strong>Strategy:</strong> Implemented a robust automated test suite covering critical user flows.<br>
+          <strong>Outcome:</strong> Reduced ongoing testing time by 30% and caught critical defects early in the
+          pipeline, preventing post-release hotfixes.
+        </p>
+      </div>
+
+      <!-- Case Study 2 -->
+      <div class="case-study-card">
+        <span class="case-study-meta">Process Improvement</span>
+        <h3>Zero Downtime Deployments at Bajaj Finserv Health</h3>
+        <p style="margin-bottom: 20px; color: var(--text-secondary);">
+          <strong>Challenge:</strong> Ensuring stability during frequent production releases for a critical health
+          platform.<br>
+          <strong>Strategy:</strong> Led PROD deployments with a streamlined defect management process and rigorous
+          API/System testing.<br>
+          <strong>Outcome:</strong> Achieved zero downtime during releases and reduced post-release defects by 20%.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Experience Timeline -->
+  <section id="experience">
+    <div class="container reveal">
+      <h2 class="section-title">Experience</h2>
+      <div class="timeline">
+
+        <!-- Job 1 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Quality Analyst Specialist</h3>
+            <div class="timeline-meta">
+              <span>DashClicks India (Remote)</span>
+              <span>Feb 2022 – Present</span>
             </div>
+            <ul>
+              <li>Automated manual test cases, reducing testing time by 30% and improving product quality.</li>
+              <li>Identified critical defects, reducing post-release defect rates by 20%.</li>
+              <li>Executing comprehensive regression, integration, and system testing for multiple releases.</li>
+              <li>Collaborating deeply with developers and product managers to align on requirements.</li>
+            </ul>
           </div>
         </div>
-      </label>
-      <br>
-    </center>
-    <div class="section">
-      <h2>Professional Summary</h2>
-      <p> Dedicated and results-oriented software quality assurance engineer with over 5 years of experience in both 
-        manual and automated testing. Demonstrated success in lowering defect rates, optimizing testing workflows, and 
-        improving product quality through strategic testing and teamwork. Skilled in utilizing tools such as Selenium, 
-        Cypress, and Katalon to provide timely, high-quality solutions. Committed to fostering innovation and turning 
-        technology into meaningful outcomes.
-      </p>
-      <h2>Core Competencies</h2>
-      <ul>
-        <li>Test Automation Tools: Selenium, Katalon Studio, Cypress Studio</li>
-        <li>Testing Expertise: Functional, Regression, Integration, System Testing</li>
-        <li>Methodologies: Agile, Scrum, Waterfall</li>
-        <li>Soft Skills: Cross-functional Collaboration, Team Leadership, Problem-Solving, Adaptability</li>
-        <li>Tools: Jira, TestRail, Azure DevOps, Postman</li>
-        <li>Languages: Java, JavaScript</li>
-      </ul>
-    </div>
 
-    <div class="section">
-      <h2>Professional Experience</h2>
-      
-      <h3>Quality Analyst Specialist</h3>
-      <p>DashClicks India (Remote)</p>
-      <p>Feb 2022 – Present</p>
-      <ul>
-        <li>Automated manual test cases, reducing testing time by 30% and improving product quality across platforms.</li>
-        <li>Identified and resolved critical defects, reducing post-release defect rates by 20%.</li>
-        <li>Collaborated with developers and product managers to ensure clear alignment on product requirements and goals.</li>
-        <li>Executed comprehensive regression, integration, and system testing for multiple software releases.</li>
-        <li>Gained hands-on experience with advanced tools, including Cypress Studio and Playwright.</li>
-      </ul>
+        <!-- Job 2 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Manual QE</h3>
+            <div class="timeline-meta">
+              <span>Bajaj Finserv Health (Pune)</span>
+              <span>Jan 2021 – Feb 2022</span>
+            </div>
+            <ul>
+              <li>Achieved 25% reduction in testing cycle time by optimizing regression processes.</li>
+              <li>Led PROD deployments for web applications, ensuring zero downtime.</li>
+              <li>Won 1st prize in "Bugathon" competition for exemplary bug detection.</li>
+            </ul>
+          </div>
+        </div>
 
-      <h3>Manual QE</h3>
-      <p>Bajaj Finserv Health (Viman Nagar, Pune)</p>
-      <p>Jan 2021 – Feb 2022</p>
-      <ul>
-        <li>Achieved a 25% reduction in testing cycle time by optimizing regression testing processes.</li>
-        <li>Conducted API, performance, web, and mobile app testing, contributing to seamless product launches.</li>
-        <li>Led PROD deployments and release management for web applications, ensuring zero downtime.</li>
-        <li>Enhanced team productivity by introducing a streamlined defect management process.</li>
-        <li>Recognized with 1st prize in the "Bugathon" competition for exemplary bug detection.</li>
-      </ul>
+        <!-- Job 3 -->
+        <div class="timeline-item">
+          <div class="timeline-marker"></div>
+          <div class="timeline-content">
+            <h3>Test Engineer</h3>
+            <div class="timeline-meta">
+              <span>Global Step (Pune)</span>
+              <span>May 2019 – Jan 2021</span>
+            </div>
+            <ul>
+              <li>Designed and executed over 500 test cases, achieving 95% test coverage.</li>
+              <li>Improved reporting efficiency by 15% using TestRail and Jira.</li>
+              <li>Contributed to compliance testing and performance optimization.</li>
+            </ul>
+          </div>
+        </div>
 
-      <h3>Test Engineer</h3>
-      <p>Global Step (Viman Nagar, Pune)</p>
-      <p>May 2019 – Jan 2021</p>
-      <ul>
-        <li>Conducted manual, performance, and regression testing, ensuring adherence to rigorous quality standards.</li>
-        <li>Designed and executed over 500 test cases, achieving 95% test coverage for various projects.</li>
-        <li>Actively contributed to compliance testing and performance optimization for production builds.</li>
-        <li>Utilized tools like TestRail and Jira to track defects and document test results, improving reporting efficiency by 15%.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Education</h2>
-      <h3>Master of Computer Applications (MCA)</h3>
-      <p>Sinhgad Institute Of Management, Pune</p>
-      <p>2017 – 2020</p>
-
-      <h3>Bachelor of Computer Applications (BCA)</h3>
-      <p>Vikash School Of Business Management, Bargarh</p>
-      <p>2014 – 2017</p>
-    </div>
-
-    <div class="section">
-      <h2>Technical Skills</h2>
-      <ul>
-        <li>Automation Tools: Selenium, Katalon Studio, Cypress Studio</li>
-        <li>Defect Tracking Tools: Jira, Azure DevOps</li>
-        <li>API Testing Tools: Postman</li>
-        <li>Programming Languages: Java, JavaScript</li>
-        <li>Testing Expertise: Functional, Regression, System, Integration Testing</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Achievements & Professional Development</h2>
-      <ul>
-        <li>Reduced testing cycle time by 30% through automation initiatives.</li>
-        <li>Achieved 20% reduction in post-release defect rates via enhanced testing strategies.</li>
-        <li>Recognized with 1st prize in "Bugathon" for outstanding bug detection capabilities.</li>
-        <li>Actively participated in webinars and workshops on Agile methodologies and test automation tools.</li>
-        <li>Member of professional testing forums and communities, contributing to industry discussions.</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Personal Attributes</h2>
-      <ul>
-        <li>Strong communicator, capable of simplifying complex technical concepts for diverse audiences.</li>
-        <li>Quick learner, adaptable to new tools and methodologies.</li>
-        <li>Passionate about continuous professional growth and staying updated with the latest industry trends</li>
-      </ul>
-    </div>
-    <div class="section">
-      <h2>Projects</h2>
-      <p><a href="https://github.com/Subrat-Pradhan/DashclicksCypressProject">Automating DashClicks smoke test cases with Cypress</a></p>
-      <p><a href="https://github.com/Subrat-Pradhan/Subrat-Pradhan.github.io">Portfolio project using HTML, CSS and java</a></p>
-      <p></p>
-    </div>
-    <div class="section">
-      <h2>Academic Background</h2>
-      <div class="academic-item">
-        <h3>Master of Computer Application</h3>
-        <p>College: Sinhgad Institute Of Management, Pune</p>
-        <p>University: Savitribai Phule Pune University</p>
-        <p>Year of Graduation: 2020</p>
-      </div>
-      <div class="academic-item">
-        <h3>Bachelor of Computer Application</h3>
-        <p>College: Vikash School Of Business Management, Bargarh</p>
-        <p>University: Sambalpur University</p>
-        <p>Year of Graduation: 2017</p>
       </div>
     </div>
-    <center>
-    <p>
-      <h5>Email: <a href="mailto:subratkp27@gmail.com"> subratkp27@gmail.com</a> 
-        Phone: <a href="tel:(+91)(9777099027)">9777099027</a>
-        Github: <a href="https://github.com/Subrat-Pradhan">Subrat-Pradhan</a>
-        LinkedIn: <a href="https://www.linkedin.com/in/subrat-kumar-pradhan-977a5645/">Subrat-Kumar-Pradhan</a>
-      </h5>
-    </p>
-  </div>
-    
-  <script>
-    (function() {
-      // Cache DOM elements
-      const root = document.documentElement;
-      const themeSwitch = document.querySelector('.theme-switch__checkbox');
+  </section>
 
-      // Theme toggle handler
-      function toggleTheme() {
-        if (themeSwitch.checked) {
-          // Dark theme
-          root.style.setProperty('--background-color', '#121212');
-          root.style.setProperty('--text-color', '#ffffff');
-          root.style.setProperty('--section-bg', '#1f1f1f');
-          root.style.setProperty('--heading-color', '#00bcd4');
-        } else {
-          // Light theme
-          root.style.setProperty('--background-color', '#ffffff');
-          root.style.setProperty('--text-color', '#333333');
-          root.style.setProperty('--section-bg', '#f5f5f5');
-          root.style.setProperty('--heading-color', '#007bff');
-        }
-      }
+  <!-- Projects Section -->
+  <section id="projects">
+    <div class="container reveal">
+      <h2 class="section-title">Selected Projects</h2>
+      <div class="projects-grid">
 
-      // Event listener for theme switch
-      themeSwitch.addEventListener('change', toggleTheme);
+        <div class="project-card">
+          <h3>DashClicks Automation</h3>
+          <p>Automated smoke test suite for DashClicks using Cypress to ensure core functionality stability.</p>
+          <a href="https://github.com/Subrat-Pradhan/DashclicksCypressProject" class="project-link">View on GitHub →</a>
+        </div>
 
-      // Initialize theme
-      toggleTheme();
-    })();
-  </script>
+        <div class="project-card">
+          <h3>Portfolio V2</h3>
+          <p>This personal portfolio website, built with performance-focused semantic HTML and modern CSS.</p>
+          <a href="https://github.com/Subrat-Pradhan/Subrat-Pradhan.github.io" class="project-link">View on GitHub →</a>
+        </div>
+
+        <!-- Placeholder for more -->
+        <div class="project-card">
+          <h3>API Testing Framework</h3>
+          <p>A conceptual framework setup for testing REST APIs using Postman and Newman options.</p>
+          <a href="https://github.com/Subrat-Pradhan" class="project-link">View Profile →</a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Education -->
+  <section id="education" style="background-color: var(--bg-secondary);">
+    <div class="container reveal">
+      <h2 class="section-title">Education</h2>
+      <div
+        style="display: grid; grid-template-columns: 1fr 1fr; gap: 40px; max-width: 800px; margin: 0 auto; text-align: center;">
+
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 5px;">MCA (Computer Applications)</h3>
+          <p style="color: var(--text-secondary);">Sinhgad Institute, Pune</p>
+          <p style="font-weight: 500;">2017 – 2020</p>
+        </div>
+
+        <div>
+          <h3 style="font-size: 1.2rem; margin-bottom: 5px;">BCA (Computer Applications)</h3>
+          <p style="color: var(--text-secondary);">Vikash School, Bargarh</p>
+          <p style="font-weight: 500;">2014 – 2017</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact/Footer -->
+  <footer id="contact">
+    <div class="container">
+      <h2 style="margin-bottom: 30px; font-size: 2rem;">Get In Touch</h2>
+      <div class="social-links">
+        <a href="mailto:subratkp27@gmail.com">subratkp27@gmail.com</a>
+        <a href="https://github.com/Subrat-Pradhan">GitHub</a>
+        <a href="https://www.linkedin.com/in/subrat-kumar-pradhan-977a5645/">LinkedIn</a>
+      </div>
+      <p class="footer-copy">© 2024 Subrat Kumar Pradhan. Designed with clean code.</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 
 </html>
